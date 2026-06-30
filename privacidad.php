@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — PanaderiaMarket</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/terminos.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.php class="navbar-logo">
+        <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
+        Panaderia<span class="marca">PUMA</span>
+      </a>
+      <div class="navbar-actions">
+        <a href="index.php class="btn btn-ghost btn-sm">← Volver</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="terms-wrap">
+    <div class="terms-header">
+      <span class="emoji">🔒</span>
+      <h1>Política de Privacidad</h1>
+      <p>Última actualización: <span id="fecha-actual"></span> — PanaderiaMarket, República Argentina</p>
+    </div>
+
+    <div class="terms-sec">
+      <h2>1. 📋 Datos que recopilamos</h2>
+      <p>Para poder ofrecerte el servicio de marketplace, recopilamos los siguientes datos:</p>
+      <ul>
+        <li><strong>Cuenta:</strong> nombre completo, email y contraseña (gestionada de forma cifrada por Supabase Auth).</li>
+        <li><strong>Perfil de vendedor:</strong> nombre de la panadería, descripción, foto de perfil, banner, Instagram, teléfono y, si configura transferencias, CBU/alias/titular.</li>
+        <li><strong>Pedidos:</strong> nombre, email, dirección, código postal y notas que ingreses al hacer un pedido.</li>
+        <li><strong>Medios de pago:</strong> si elegís pagar con tarjeta, guardamos únicamente el tipo de tarjeta y los <strong>últimos 4 dígitos</strong>. Nunca el número completo ni el CVV.</li>
+        <li><strong>Carrito de compras:</strong> se guarda localmente en tu navegador (localStorage), no en nuestros servidores, hasta que confirmás el pedido.</li>
+      </ul>
+    </div>
+
+    <div class="terms-sec">
+      <h2>2. 🎯 Para qué usamos tus datos</h2>
+      <p>Tus datos se usan exclusivamente para:</p>
+      <ul>
+        <li>Crear y gestionar tu cuenta.</li>
+        <li>Procesar y mostrar tus pedidos al vendedor correspondiente (y viceversa).</li>
+        <li>Mostrar tu perfil público de panadería si te registrás como vendedor.</li>
+        <li>Permitirte calificar productos que compraste.</li>
+        <li>Enviarte emails de recuperación de contraseña cuando lo solicites.</li>
+      </ul>
+      <div class="terms-highlight">
+        🔔 No vendemos, alquilamos ni compartimos tus datos personales con terceros con fines publicitarios.
+      </div>
+    </div>
+
+    <div class="terms-sec">
+      <h2>3. ☁️ Dónde se almacenan los datos</h2>
+      <p>Los datos se almacenan en <strong>Supabase</strong>, un proveedor de infraestructura (base de datos PostgreSQL y autenticación) que aplica cifrado en tránsito y en reposo. Las imágenes (productos, avatares) se almacenan en el servicio de Storage de Supabase.</p>
+    </div>
+
+    <div class="terms-sec">
+      <h2>4. 🍪 Almacenamiento local del navegador</h2>
+      <p>Usamos <code>localStorage</code> del navegador únicamente para guardar el contenido de tu carrito de compras mientras navegás, de forma que no lo pierdas si cerrás y volvés a abrir la página. Este dato no se envía a nuestros servidores hasta que confirmás un pedido.</p>
+    </div>
+
+    <div class="terms-sec">
+      <h2>5. ⏳ Conservación de datos</h2>
+      <p>Conservamos tus datos mientras tu cuenta esté activa. Si solicitás la eliminación de tu cuenta, eliminaremos o anonimizaremos tus datos personales, salvo aquellos que debamos conservar por obligaciones legales (por ejemplo, historial de transacciones).</p>
+    </div>
+
+    <div class="terms-sec">
+      <h2>6. ⚖️ Tus derechos</h2>
+      <p>Conforme a la <strong>Ley N° 25.326 de Protección de los Datos Personales</strong> de la República Argentina, tenés derecho a:</p>
+      <ul>
+        <li>Acceder a los datos personales que tenemos sobre vos.</li>
+        <li>Rectificar datos incorrectos o desactualizados.</li>
+        <li>Solicitar la eliminación de tu cuenta y datos asociados.</li>
+        <li>Retirar tu consentimiento en cualquier momento.</li>
+      </ul>
+      <p>Para ejercer estos derechos, escribinos a <a href="mailto:pumapasteleria@gmail.com">pumapasteleria@gmail.com</a>.</p>
+      <div class="terms-highlight">
+        🔐 La DIRECCIÓN NACIONAL DE PROTECCIÓN DE DATOS PERSONALES, Órgano de Control de la Ley N° 25.326, tiene la atribución de atender denuncias y reclamos por incumplimiento de las normas de protección de datos.
+      </div>
+    </div>
+
+    <div class="terms-sec">
+      <h2>7. 🔄 Cambios en esta política</h2>
+      <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Cualquier cambio será publicado en esta página con su fecha de actualización.</p>
+    </div>
+
+    <div class="terms-footer">
+      <span class="logo-emoji">🥖</span>
+      <strong>PanaderiaMarket</strong>
+      <p>San Fernando del Valle de Catamarca, Provincia de Catamarca, Argentina</p>
+      <p>Consultas: <a href="mailto:pumapasteleria@gmail.com">pumapasteleria@gmail.com</a> · <a href="tel:+5493834223388">+54 9 383 422-3388</a></p>
+      <p class="copy">© <span id="anio-actual"></span> PanaderiaMarket — Todos los derechos reservados</p>
+    </div>
+  </div>
+
+  <footer class="footer-puma">
+  <div class="footer-puma-inner">
+
+    <div class="footer-col footer-logo-col">
+      <div class="footer-logo-wrap">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+      </div>
+      <div class="footer-marca">
+        Panaderia<br><span>PUMA</span>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Compañía</h4>
+      <a href="nosotros.php>Misión, Visión, Valores</a>
+      <a href="terminos.php>Nuestros Terminos</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <a href="#">@lospuma.site</a>
+      <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+      <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Ayuda</h4>
+      <a href="nosotros.php>¿Cómo comprar?</a>
+      <a href="login.php>¿Cómo vender?</a>
+      <a href="nosotros.php>Preguntas frecuentes</a>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/fecha.js"></script>
+
+</body>
+</html>

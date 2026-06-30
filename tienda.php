@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda — PanaderiaMarket</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/tienda.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation">
+    <div class="navbar-inner">
+      <a href="index.php class="navbar-logo">
+        <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
+        Panaderia<span class="marca">PUMA</span>
+      </a>
+      <div class="navbar-search" role="search">
+        <span class="ico" aria-hidden="true">🔍</span>
+        <input type="search" id="search-tienda" placeholder="Buscar en esta tienda..." aria-label="Buscar en la tienda">
+      </div>
+      <div class="navbar-actions">
+        <a href="catalogo.php class="btn btn-ghost btn-sm">← Volver</a>
+        <button class="cart-btn" id="cart-toggle" aria-label="Carrito">
+          🛒 <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER TIENDA -->
+  <header class="tienda-header" id="tienda-header-wrap">
+    <div class="container">
+      <a href="index.php class="volver">← Todas las panaderías</a>
+      <div class="tienda-info" id="tienda-info">
+        <div class="skeleton" style="width:80px;height:80px;border-radius:50%"></div>
+        <div style="flex:1">
+          <div class="skeleton" style="width:220px;height:28px;margin-bottom:10px"></div>
+          <div class="skeleton" style="width:300px;height:16px;margin-bottom:8px"></div>
+          <div class="skeleton" style="width:180px;height:14px"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <div id="filtros-tienda" class="filtros sec-sm" role="group" aria-label="Categorías"></div>
+
+    <div class="toolbar">
+      <span class="toolbar-count" id="count-tienda"></span>
+    </div>
+
+    <div id="grid-tienda" class="grid-productos sec-sm" role="list"></div>
+
+    <div id="empty-tienda" class="empty-state">
+      <span class="ico">🍞</span>
+      <h3>Esta tienda aún no tiene productos</h3>
+      <p>Volvé pronto</p>
+    </div>
+
+    <!-- MAPA -->
+    <section id="sec-mapa-tienda" class="container" style="display:none;margin-bottom:32px">
+      <div style="background:white;border-radius:var(--radio-lg);
+              padding:20px;box-shadow:0 2px 12px rgba(0,0,0,0.07)">
+        <h3 style="margin-bottom:4px;font-size:1rem">📍 Donde encontrarnos</h3>
+        <p style="font-size:0.82rem;color:var(--gris);margin-bottom:12px" id="texto-direccion-tienda"></p>
+        <div id="mapa-tienda" style="height:240px;border-radius:var(--radio);
+         background:var(--crema-dark)"></div>
+        <a id="link-mapa-externo" href="#" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:10px;
+              font-size:0.82rem;color:var(--naranja);font-weight:600;
+              text-decoration:none">
+          🗺️ Ver en Google Maps
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CARRITO -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Tu carrito 🛒</h3>
+      <button class="cart-close" id="cart-close">✕</button>
+    </div>
+    <div id="cart-body"></div>
+    <div id="cart-footer"></div>
+  </aside>
+
+  <footer class="footer-puma">
+    <div class="footer-puma-inner">
+
+      <div class="footer-col footer-logo-col">
+        <div class="footer-logo-wrap">
+          <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+        </div>
+        <div class="footer-marca">
+          Panaderia<br><span>PUMA</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Compañía</h4>
+        <a href="nosotros.php>Misión, Visión, Valores</a>
+        <a href="privacidad.php>Nuestras Condiciones</a>
+        <a href="terminos.php>Nuestros Terminos</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="#">@lospuma.site</a>
+        <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+        <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <a href="nosotros.php>Preguntas frecuentes</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <div id="toast-box"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="js/tienda.js"></script>
+
+</body>
+
+</html>

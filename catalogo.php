@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo — PanaderiaMarket</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar-inner">
+      <a href="index.php class="navbar-logo" aria-label="Inicio">
+        <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
+        Panaderia<span class="marca">PUMA</span>
+      </a>
+      <div class="navbar-actions">
+        <a href="index.php class="btn btn-ghost btn-sm">← Inicio</a>
+        <a href="login.php id="nav-btn" class="btn btn-ghost btn-sm">Ingresar</a>
+        <a href="historial.php id="nav-historial"
+           class="btn btn-ghost btn-sm" style="display:none">
+          Mis pedidos 📦
+        </a>
+        <button id="nav-logout" class="btn btn-ghost btn-sm"
+                style="display:none" aria-label="Cerrar sesión">
+          Salir 🚪
+        </button>
+        <button class="cart-btn" id="cart-toggle" aria-label="Abrir carrito">
+          🛒 <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="catalogo-header">
+    <div class="container">
+      <h1>Catálogo de productos</h1>
+      <p>Encontrá panes, facturas, tortas y más de panaderías artesanales de Catamarca</p>
+    </div>
+  </div>
+
+  <!-- BARRA BÚSQUEDA + ORDEN -->
+  <div class="catalogo-search-bar">
+    <div class="catalogo-search-inner">
+      <button class="btn btn-ghost btn-sm btn-toggle-sidebar" id="btn-toggle-sidebar">
+        🏪 Panaderías
+      </button>
+      <div class="search-wrap" role="search">
+        <span class="ico" aria-hidden="true">🔍</span>
+        <input type="search" id="search-catalogo"
+               placeholder="Buscar productos..."
+               aria-label="Buscar productos"
+               autocomplete="off">
+      </div>
+      <select id="ordenar" aria-label="Ordenar productos">
+        <option value="reciente">Más recientes</option>
+        <option value="precio_asc">Menor precio</option>
+        <option value="precio_desc">Mayor precio</option>
+        <option value="nombre">A–Z</option>
+        <option value="calificacion">Mejor calificados ⭐</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- LAYOUT -->
+  <div class="catalogo-layout">
+
+    <!-- SIDEBAR PANADERÍAS -->
+    <aside class="sidebar-pan" id="sidebar-pan" aria-label="Panaderías">
+      <h3>🏪 Panaderías</h3>
+      <div class="search-pan">
+        <span class="ico">🔍</span>
+        <input type="search" id="search-panaderias"
+               placeholder="Buscar panadería..."
+               aria-label="Buscar panadería">
+      </div>
+      <div id="panaderias-list">
+        <div class="skeleton" style="height:36px;border-radius:8px;margin-bottom:6px"></div>
+        <div class="skeleton" style="height:36px;border-radius:8px;margin-bottom:6px"></div>
+        <div class="skeleton" style="height:36px;border-radius:8px"></div>
+      </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div>
+      <div class="filtros-cat" role="group" aria-label="Filtrar por categoría">
+        <button class="filtro on" data-cat="todos" aria-pressed="true">Todos</button>
+        <button class="filtro" data-cat="pan"      aria-pressed="false">🍞 Pan</button>
+        <button class="filtro" data-cat="facturas" aria-pressed="false">🥐 Facturas</button>
+        <button class="filtro" data-cat="galletas" aria-pressed="false">🍪 Galletas</button>
+        <button class="filtro" data-cat="cakes"    aria-pressed="false">🎂 Cakes</button>
+        <button class="filtro" data-cat="otro"     aria-pressed="false">✨ Otro</button>
+      </div>
+
+      <div class="toolbar">
+        <span class="toolbar-count" id="count"></span>
+      </div>
+
+      <div id="productos-grid" class="grid-productos"
+           aria-label="Productos disponibles">
+      </div>
+
+      <div id="empty-state" class="empty-state" aria-live="polite">
+        <span class="ico">🔍</span>
+        <h3>Sin resultados</h3>
+        <p>Probá con otra búsqueda o categoría</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CARRITO -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras">
+    <div class="cart-header">
+      <h3>Tu carrito 🛒</h3>
+      <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div id="cart-body"></div>
+    <div id="cart-footer"></div>
+  </aside>
+
+  <footer class="footer-puma">
+  <div class="footer-puma-inner">
+
+    <div class="footer-col footer-logo-col">
+      <div class="footer-logo-wrap">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+      </div>
+      <div class="footer-marca">
+        Panaderia<br><span>PUMA</span>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Compañía</h4>
+      <a href="nosotros.php>Misión, Visión, Valores</a>
+      <a href="privacidad.php>Nuestras Condiciones</a>
+      <a href="terminos.php>Nuestros Terminos</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <a href="#">@lospuma.site</a>
+      <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+      <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Ayuda</h4>
+      <a href="nosotros.php>¿Cómo comprar?</a>
+      <a href="login.php>¿Cómo vender?</a>
+      <a href="nosotros.php>Preguntas frecuentes</a>
+    </div>
+
+  </div>
+</footer>
+
+  <div id="toast-box"></div>
+  <script type="module" src="js/catalogo.js"></script>
+
+</body>
+</html>

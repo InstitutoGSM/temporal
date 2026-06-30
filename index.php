@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PanaderiaMarket — Panes artesanales de Catamarca</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="landing-nav" role="navigation" aria-label="Navegación principal">
+    <div class="landing-nav-inner">
+      <a href="index.php class="landing-nav-logo">
+        <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
+        Panaderia<span class="marca">PUMA</span>
+      </a>
+      <div class="landing-nav-actions">
+        <a href="nosotros.php class="btn btn-ghost btn-sm">Nosotros</a>
+        <a href="login.php id="nav-btn" class="btn btn-ghost btn-sm">Ingresar</a>
+        <a href="catalogo.php class="btn btn-naranja btn-sm">
+          Ver productos →
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-landing" aria-label="Bienvenida">
+    <div class="hero-content">
+      <div class="hero-texto">
+        <h1>El pan artesanal<br>que <span>estabas buscando</span> 🥖</h1>
+        <p>
+          Conectamos panaderías artesanales de Catamarca con vos.
+          Productos frescos, hechos con amor y entregados bajo pedido.
+        </p>
+        <div class="hero-btns">
+          <a href="catalogo.php class="btn-hero-primary">
+            🛍️ Ver productos
+          </a>
+          <a href="login.php?tab=registro" class="btn-hero-secondary">
+            Registrá tu panadería →
+          </a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div class="hero-stat">
+            <div class="num" id="stat-productos">—</div>
+            <div class="lbl">Productos</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num" id="stat-panaderias">—</div>
+            <div class="lbl">Panaderías</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num" id="stat-pedidos">—</div>
+            <div class="lbl">Pedidos realizados</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-emoji-grid">
+          <div class="hero-emoji-card">
+            <span class="e">🍞</span>
+            <span class="n">Pan artesanal</span>
+          </div>
+          <div class="hero-emoji-card">
+            <span class="e">🥐</span>
+            <span class="n">Facturas</span>
+          </div>
+          <div class="hero-emoji-card">
+            <span class="e">🎂</span>
+            <span class="n">Tortas</span>
+          </div>
+          <div class="hero-emoji-card">
+            <span class="e">🍪</span>
+            <span class="n">Galletas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="como-sec" aria-label="Cómo funciona">
+    <div class="como-inner">
+      <div class="sec-label">Simple y rápido</div>
+      <h2 class="sec-titulo-lg">¿Cómo funciona? 🤔</h2>
+      <p class="sec-sub">
+        En tres pasos tenés tu pedido listo para retirar o recibir.
+      </p>
+      <div class="pasos-grid">
+        <div class="paso-card" data-num="1">
+          <span class="paso-ico">🔍</span>
+          <h3>Explorá</h3>
+          <p>Navegá el catálogo de panaderías y productos artesanales de Catamarca.</p>
+        </div>
+        <div class="paso-card" data-num="2">
+          <span class="paso-ico">🛒</span>
+          <h3>Elegí</h3>
+          <p>Agregá lo que querés al carrito y elegí cómo querés pagarlo.</p>
+        </div>
+        <div class="paso-card" data-num="3">
+          <span class="paso-ico">📦</span>
+          <h3>Recibí</h3>
+          <p>El vendedor prepara tu pedido y coordinan la entrega directamente.</p>
+        </div>
+        <div class="paso-card" data-num="4">
+          <span class="paso-ico">⭐</span>
+          <h3>Calificá</h3>
+          <p>Dejá tu opinión para ayudar a otros compradores a elegir mejor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRUSEL DESTACADOS -->
+  <section class="destacados-sec" aria-label="Productos destacados">
+    <div class="destacados-inner">
+      <div class="sec-label">Lo mejor de la semana</div>
+      <h2 class="sec-titulo-lg">Productos destacados ✨</h2>
+      <p class="sec-sub">
+        🏆 Más vendidos · ⭐ Mejor calificados · 🔥 Tendencia
+      </p>
+
+      <div class="carrusel-wrap" id="carrusel-wrap">
+        <div class="carrusel-track" id="carrusel-track">
+          <div class="carrusel-card" style="pointer-events:none">
+            <div class="skeleton" style="height:180px"></div>
+            <div class="carrusel-body">
+              <div class="skeleton" style="height:14px;width:60%;margin-bottom:8px"></div>
+              <div class="skeleton" style="height:20px;margin-bottom:6px"></div>
+              <div class="skeleton" style="height:14px;width:40%"></div>
+            </div>
+          </div>
+          <div class="carrusel-card" style="pointer-events:none">
+            <div class="skeleton" style="height:180px"></div>
+            <div class="carrusel-body">
+              <div class="skeleton" style="height:14px;width:60%;margin-bottom:8px"></div>
+              <div class="skeleton" style="height:20px;margin-bottom:6px"></div>
+              <div class="skeleton" style="height:14px;width:40%"></div>
+            </div>
+          </div>
+          <div class="carrusel-card" style="pointer-events:none">
+            <div class="skeleton" style="height:180px"></div>
+            <div class="carrusel-body">
+              <div class="skeleton" style="height:14px;width:60%;margin-bottom:8px"></div>
+              <div class="skeleton" style="height:20px;margin-bottom:6px"></div>
+              <div class="skeleton" style="height:14px;width:40%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carrusel-controles">
+        <button class="carrusel-btn" id="carr-prev" aria-label="Anterior">←</button>
+        <div class="carrusel-dots" id="carrusel-dots"></div>
+        <button class="carrusel-btn" id="carr-next" aria-label="Siguiente">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANADERÍAS -->
+  <section class="pans-sec" aria-label="Panaderías disponibles">
+    <div class="pans-inner">
+      <div class="sec-label">Quiénes somos</div>
+      <h2 class="sec-titulo-lg">Nuestras panaderías 🏪</h2>
+      <p class="sec-sub">
+        Todas verificadas y habilitadas para elaborar productos alimenticios en Catamarca.
+      </p>
+      <div class="pans-grid" id="pans-grid">
+        <div class="skeleton" style="height:130px;border-radius:var(--radio-lg)"></div>
+        <div class="skeleton" style="height:130px;border-radius:var(--radio-lg)"></div>
+        <div class="skeleton" style="height:130px;border-radius:var(--radio-lg)"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTE FINAL -->
+  <section class="cta-sec" aria-label="Llamada a la acción">
+    <h2>¿Tenés una panadería? 🥖</h2>
+    <p>
+      Registrate gratis, subí tus productos y empezá a recibir pedidos hoy mismo.
+    </p>
+    <a href="login.php class="btn-hero-primary" style="display:inline-flex">
+      Registrar mi panadería →
+    </a>
+  </section>
+
+<footer class="footer-puma">
+  <div class="footer-puma-inner">
+
+    <div class="footer-col footer-logo-col">
+      <div class="footer-logo-wrap">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+      </div>
+      <div class="footer-marca">
+        Panaderia<br><span>PUMA</span>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Compañía</h4>
+      <a href="nosotros.php>Misión, Visión, Valores</a>
+      <a href="privacidad.php>Nuestras Condiciones</a>
+      <a href="terminos.php>Nuestros Terminos</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <a href="#">@lospuma.site</a>
+      <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+      <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Ayuda</h4>
+      <a href="nosotros.php>¿Cómo comprar?</a>
+      <a href="login.php>¿Cómo vender?</a>
+      <a href="nosotros.php>Preguntas frecuentes</a>
+    </div>
+
+  </div>
+</footer>
+
+  <div id="toast-box"></div>
+
+  <script type="module" src="js/index.js"></script>
+
+</body>
+
+</html>
