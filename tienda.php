@@ -1,3 +1,6 @@
+<?php
+include('db.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,7 +18,7 @@
 
   <nav class="navbar" role="navigation">
     <div class="navbar-inner">
-      <a href="index.php class="navbar-logo">
+      <a href="index.php class=" navbar-logo">
         <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
         Panaderia<span class="marca">PUMA</span>
       </a>
@@ -24,7 +27,7 @@
         <input type="search" id="search-tienda" placeholder="Buscar en esta tienda..." aria-label="Buscar en la tienda">
       </div>
       <div class="navbar-actions">
-        <a href="catalogo.php class="btn btn-ghost btn-sm">← Volver</a>
+        <a href="catalogo.php class=" btn btn-ghost btn-sm">← Volver</a>
         <button class="cart-btn" id="cart-toggle" aria-label="Carrito">
           🛒 <span class="cart-badge">0</span>
         </button>
@@ -35,7 +38,7 @@
   <!-- HEADER TIENDA -->
   <header class="tienda-header" id="tienda-header-wrap">
     <div class="container">
-      <a href="index.php class="volver">← Todas las panaderías</a>
+      <a href="index.php class=" volver">← Todas las panaderías</a>
       <div class="tienda-info" id="tienda-info">
         <div class="skeleton" style="width:80px;height:80px;border-radius:50%"></div>
         <div style="flex:1">
@@ -108,15 +111,15 @@
       <div class="footer-col">
         <h4>Compañía</h4>
         <a href="nosotros.php>Misión, Visión, Valores</a>
-        <a href="privacidad.php>Nuestras Condiciones</a>
+        <a href=" privacidad.php>Nuestras Condiciones</a>
         <a href="terminos.php>Nuestros Terminos</a>
       </div>
 
-      <div class="footer-col">
-        <h4>Contacto</h4>
-        <a href="#">@lospuma.site</a>
-        <a href="tel:+5493834887766">+54 9 383 488-7766</a>
-        <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
+      <div class=" footer-col">
+          <h4>Contacto</h4>
+          <a href="#">@lospuma.site</a>
+          <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+          <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
       </div>
 
       <div class="footer-col">
@@ -127,9 +130,10 @@
     </div>
   </footer>
 
-  <div id="toast-box"></div>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script type="module" src="js/tienda.js"></script>
+  <div id=" toast-box">
+      </div>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script type="module" src="js/tienda.js"></script>
 
 </body>
 

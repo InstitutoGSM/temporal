@@ -1,3 +1,6 @@
+<?php
+include('db.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -64,7 +67,7 @@
       <div class="sidebar-bottom">
         <ul class="sidebar-nav">
           <li>
-            <a href="catalogo.php target="_blank">
+            <a href="catalogo.php target=" _blank">
               <span class="nav-ico">🏪</span> Ver mi tienda
             </a>
           </li>
@@ -595,21 +598,21 @@
           <div class="footer-col">
             <h4>Compañía</h4>
             <a href="nosotros.php>Misión, Visión, Valores</a>
-            <a href="privacidad.php>Nuestras Condiciones</a>
+            <a href=" privacidad.php>Nuestras Condiciones</a>
             <a href="terminos.php>Nuestros Terminos</a>
           </div>
 
-          <div class="footer-col">
-            <h4>Contacto</h4>
-            <a href="#">@lospuma.site</a>
-            <a href="tel:+5493834887766">+54 9 383 488-7766</a>
-            <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
+          <div class=" footer-col">
+              <h4>Contacto</h4>
+              <a href="#">@lospuma.site</a>
+              <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+              <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
           </div>
 
           <div class="footer-col">
             <h4>Ayuda</h4>
             <a href="login.php>¿Cómo vender?</a>
-            <a href="nosotros.php>Preguntas frecuentes</a>
+            <a href=" nosotros.php>Preguntas frecuentes</a>
           </div>
 
         </div>
@@ -620,7 +623,7 @@
 
   <div id="toast-box"></div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script type="module" src="js/vendedor.js"></script>
+  <script type="module" src="js/vendedor.js"></script>
 </body>
 
 </html>

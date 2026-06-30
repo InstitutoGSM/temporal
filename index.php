@@ -1,3 +1,6 @@
+<?php
+include('db.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,14 +16,14 @@
   <!-- NAVBAR -->
   <nav class="landing-nav" role="navigation" aria-label="Navegación principal">
     <div class="landing-nav-inner">
-      <a href="index.php class="landing-nav-logo">
+      <a href="index.php class=" landing-nav-logo">
         <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
         Panaderia<span class="marca">PUMA</span>
       </a>
       <div class="landing-nav-actions">
-        <a href="nosotros.php class="btn btn-ghost btn-sm">Nosotros</a>
-        <a href="login.php id="nav-btn" class="btn btn-ghost btn-sm">Ingresar</a>
-        <a href="catalogo.php class="btn btn-naranja btn-sm">
+        <a href="nosotros.php class=" btn btn-ghost btn-sm">Nosotros</a>
+        <a href="login.php id=" nav-btn" class="btn btn-ghost btn-sm">Ingresar</a>
+        <a href="catalogo.php class=" btn btn-naranja btn-sm">
           Ver productos →
         </a>
       </div>
@@ -37,7 +40,7 @@
           Productos frescos, hechos con amor y entregados bajo pedido.
         </p>
         <div class="hero-btns">
-          <a href="catalogo.php class="btn-hero-primary">
+          <a href="catalogo.php class=" btn-hero-primary">
             🛍️ Ver productos
           </a>
           <a href="login.php?tab=registro" class="btn-hero-secondary">
@@ -184,50 +187,51 @@
     <p>
       Registrate gratis, subí tus productos y empezá a recibir pedidos hoy mismo.
     </p>
-    <a href="login.php class="btn-hero-primary" style="display:inline-flex">
+    <a href="login.php class=" btn-hero-primary" style="display:inline-flex">
       Registrar mi panadería →
     </a>
   </section>
 
-<footer class="footer-puma">
-  <div class="footer-puma-inner">
+  <footer class="footer-puma">
+    <div class="footer-puma-inner">
 
-    <div class="footer-col footer-logo-col">
-      <div class="footer-logo-wrap">
-        <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+      <div class="footer-col footer-logo-col">
+        <div class="footer-logo-wrap">
+          <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+        </div>
+        <div class="footer-marca">
+          Panaderia<br><span>PUMA</span>
+        </div>
       </div>
-      <div class="footer-marca">
-        Panaderia<br><span>PUMA</span>
+
+      <div class="footer-col">
+        <h4>Compañía</h4>
+        <a href="nosotros.php>Misión, Visión, Valores</a>
+      <a href=" privacidad.php>Nuestras Condiciones</a>
+        <a href="terminos.php>Nuestros Terminos</a>
+    </div>
+
+    <div class=" footer-col">
+          <h4>Contacto</h4>
+          <a href="#">@lospuma.site</a>
+          <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+          <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
       </div>
-    </div>
 
-    <div class="footer-col">
-      <h4>Compañía</h4>
-      <a href="nosotros.php>Misión, Visión, Valores</a>
-      <a href="privacidad.php>Nuestras Condiciones</a>
-      <a href="terminos.php>Nuestros Terminos</a>
-    </div>
-
-    <div class="footer-col">
-      <h4>Contacto</h4>
-      <a href="#">@lospuma.site</a>
-      <a href="tel:+5493834887766">+54 9 383 488-7766</a>
-      <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
-    </div>
-
-    <div class="footer-col">
-      <h4>Ayuda</h4>
-      <a href="nosotros.php>¿Cómo comprar?</a>
-      <a href="login.php>¿Cómo vender?</a>
-      <a href="nosotros.php>Preguntas frecuentes</a>
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <a href="nosotros.php>¿Cómo comprar?</a>
+      <a href=" login.php>¿Cómo vender?</a>
+        <a href="nosotros.php>Preguntas frecuentes</a>
     </div>
 
   </div>
 </footer>
 
-  <div id="toast-box"></div>
+  <div id=" toast-box">
+      </div>
 
-  <script type="module" src="js/index.js"></script>
+      <script type="module" src="js/index.js"></script>
 
 </body>
 

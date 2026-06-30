@@ -1,5 +1,9 @@
+<?php
+include('db.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +11,51 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
 
-<div class="login-wrap admin-wrap">
-  <div class="login-col">
+  <div class="login-wrap admin-wrap">
+    <div class="login-col">
 
-    <div class="logo-wrap">
-      <div class="logo-circle">
-        <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
-      </div>
-      <div class="logo-nombre">
-        <span class="top">Panel</span>
-        <span class="bot">ADMIN</span>
-      </div>
-      <div class="logo-div"><div class="logo-div-dot"></div></div>
-    </div>
-
-    <div class="login-card">
-      <p class="panel-title admin-titulo">Acceso Administrativo</p>
-      <p class="admin-sub">Solo personal autorizado</p>
-
-      <div class="field">
-        <label for="a-email">Email</label>
-        <input type="email" id="a-email" placeholder="admin@email.com" autocomplete="email">
-      </div>
-      <div class="field">
-        <label for="a-pass">Contraseña</label>
-        <input type="password" id="a-pass" placeholder="••••••••" autocomplete="current-password">
+      <div class="logo-wrap">
+        <div class="logo-circle">
+          <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="logo-nombre">
+          <span class="top">Panel</span>
+          <span class="bot">ADMIN</span>
+        </div>
+        <div class="logo-div">
+          <div class="logo-div-dot"></div>
+        </div>
       </div>
 
-      <button class="btn-login" id="btn-admin-login">Ingresar</button>
+      <div class="login-card">
+        <p class="panel-title admin-titulo">Acceso Administrativo</p>
+        <p class="admin-sub">Solo personal autorizado</p>
 
-      <p class="admin-volver">
-        <a href="index.php>← Volver al sitio</a>
+        <div class="field">
+          <label for="a-email">Email</label>
+          <input type="email" id="a-email" placeholder="admin@email.com" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="a-pass">Contraseña</label>
+          <input type="password" id="a-pass" placeholder="••••••••" autocomplete="current-password">
+        </div>
+
+        <button class="btn-login" id="btn-admin-login">Ingresar</button>
+
+        <p class="admin-volver">
+          <a href="index.php>← Volver al sitio</a>
       </p>
     </div>
 
   </div>
 </div>
 
-<div id="toast-box"></div>
-<script type="module" src="js/admin-login.js"></script>
+<div id=" toast-box">
+      </div>
+      <script type="module" src="js/admin-login.js"></script>
 </body>
+
 </html>

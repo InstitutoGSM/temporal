@@ -1,5 +1,9 @@
+<?php
+include('db.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +11,17 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/checkout.css">
 </head>
+
 <body>
 
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="index.php class="navbar-logo">
+      <a href="index.php class=" navbar-logo">
         <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
         Panaderia<span class="marca">PUMA</span>
       </a>
       <div class="navbar-actions">
-        <a href="catalogo.php class="btn btn-ghost btn-sm">← Seguir comprando</a>
+        <a href="catalogo.php class=" btn btn-ghost btn-sm">← Seguir comprando</a>
       </div>
     </div>
   </nav>
@@ -88,23 +93,23 @@
               <div class="field">
                 <label for="t-numero">Número de tarjeta</label>
                 <input type="text" id="t-numero" placeholder="1234 5678 9012 3456"
-                       maxlength="19" autocomplete="cc-number" inputmode="numeric">
+                  maxlength="19" autocomplete="cc-number" inputmode="numeric">
               </div>
               <div class="field">
                 <label for="t-nombre">Nombre del titular</label>
                 <input type="text" id="t-nombre" placeholder="Como figura en la tarjeta"
-                       autocomplete="cc-name">
+                  autocomplete="cc-name">
               </div>
               <div class="form-row">
                 <div class="field">
                   <label for="t-vence">Vencimiento</label>
                   <input type="text" id="t-vence" placeholder="MM/AA"
-                         maxlength="5" autocomplete="cc-exp">
+                    maxlength="5" autocomplete="cc-exp">
                 </div>
                 <div class="field">
                   <label for="t-cvv">CVV</label>
                   <input type="password" id="t-cvv" placeholder="123"
-                         maxlength="4" inputmode="numeric" autocomplete="cc-csc">
+                    maxlength="4" inputmode="numeric" autocomplete="cc-csc">
                 </div>
               </div>
               <div class="tarjeta-aviso">
@@ -127,42 +132,44 @@
   </div>
 
   <footer class="footer-puma">
-  <div class="footer-puma-inner">
+    <div class="footer-puma-inner">
 
-    <div class="footer-col footer-logo-col">
-      <div class="footer-logo-wrap">
-        <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+      <div class="footer-col footer-logo-col">
+        <div class="footer-logo-wrap">
+          <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+        </div>
+        <div class="footer-marca">
+          Panaderia<br><span>PUMA</span>
+        </div>
       </div>
-      <div class="footer-marca">
-        Panaderia<br><span>PUMA</span>
+
+      <div class="footer-col">
+        <h4>Compañía</h4>
+        <a href="nosotros.php>Misión, Visión, Valores</a>
+      <a href=" privacidad.php>Nuestras Condiciones</a>
+        <a href="terminos.php>Nuestros Terminos</a>
+    </div>
+
+    <div class=" footer-col">
+          <h4>Contacto</h4>
+          <a href="#">@lospuma.site</a>
+          <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+          <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
       </div>
-    </div>
 
-    <div class="footer-col">
-      <h4>Compañía</h4>
-      <a href="nosotros.php>Misión, Visión, Valores</a>
-      <a href="privacidad.php>Nuestras Condiciones</a>
-      <a href="terminos.php>Nuestros Terminos</a>
-    </div>
-
-    <div class="footer-col">
-      <h4>Contacto</h4>
-      <a href="#">@lospuma.site</a>
-      <a href="tel:+5493834887766">+54 9 383 488-7766</a>
-      <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
-    </div>
-
-    <div class="footer-col">
-      <h4>Ayuda</h4>
-      <a href="nosotros.php>¿Cómo comprar?</a>
-      <a href="login.php>¿Cómo vender?</a>
-      <a href="nosotros.php>Preguntas frecuentes</a>
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <a href="nosotros.php>¿Cómo comprar?</a>
+      <a href=" login.php>¿Cómo vender?</a>
+        <a href="nosotros.php>Preguntas frecuentes</a>
     </div>
 
   </div>
 </footer>
 
-  <div id="toast-box"></div>
-  <script type="module" src="js/checkout.js"></script>
+  <div id=" toast-box">
+      </div>
+      <script type="module" src="js/checkout.js"></script>
 </body>
+
 </html>

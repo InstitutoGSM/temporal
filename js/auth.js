@@ -1,59 +1,31 @@
-import { supabase } from './supabase.js'
-
 export async function getUser() {
-  const { data } = await supabase.auth.getSession()
-  return data.session?.user ?? null
+  const res = await fetch('api_auth.php?action=get_user');
+  const data = await res.json();
+  return data.user ?? null;
 }
 
 export async function getPerfil(userId) {
-  const { data } = await supabase
-    .from('profiles')
-    .select('*')
-    .eq('id', userId)
-    .single()
-  return data
+  const res = await fetch(`api_auth.php?action=get_perfil&id=${userId}`);
+  return await res.json();
 }
 
 export async function logout() {
-  await supabase.auth.signOut()
-  window.location.href = 'catalogo.php'
+  await fetch('api_auth.php?action=logout');
+  window.location.href = 'catalogo.php';
 }
 
 export async function requireAuth(redirigirSi = null) {
-  const user = await getUser()
-  if (!user) {
-    window.location.href = 'login.php'
-    return null
-  }
-  const perfil = await getPerfil(user.id)
-  if (redirigirSi && perfil?.tipo !== redirigirSi) {
-    window.location.href = 'index.php'
-    return null
-  }
-  return { user, perfil }
+  const user = await getUser();
+  if (!user) { window.location.href = 'login.php'; return null; }
+  const perfil = await getPerfil(user.id);
+  if (redirigirSi && perfil?.tipo !== redirigirSi) { window.location.href = 'index.php'; return null; }
+  return { user, perfil };
 }
 
 export async function requireAdmin() {
-  const user = await getUser()
-  if (!user) {
-    window.location.href = 'admin-login.php'
-    return null
-  }
-  const perfil = await getPerfil(user.id)
-  if (perfil?.tipo !== 'admin') {
-    window.location.href = 'index.php'
-    return null
-  }
-  return { user, perfil }
-}
-
-export async function requireAuthParaComprar() {
-  const user = await getUser()
-  if (!user) {
-    sessionStorage.setItem('redirect_after_login', location.href)
-    sessionStorage.setItem('login_motivo', 'Para finalizar tu compra necesitás iniciar sesión o crear una cuenta 🛒')
-    window.location.href = 'login.php'
-    return null
-  }
-  return user
+  const user = await getUser();
+  if (!user) { window.location.href = 'admin-login.php'; return null; }
+  const perfil = await getPerfil(user.id);
+  if (perfil?.tipo !== 'admin') { window.location.href = 'index.php'; return null; }
+  return { user, perfil };
 }

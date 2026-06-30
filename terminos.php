@@ -1,5 +1,9 @@
+<?php
+include('db.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +15,12 @@
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="index.php class="navbar-logo">
+      <a href="index.php class=" navbar-logo">
         <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
         Panaderia<span class="marca">PUMA</span>
       </a>
       <div class="navbar-actions">
-        <a href="index.php class="btn btn-ghost btn-sm">← Volver</a>
+        <a href="index.php class=" btn btn-ghost btn-sm">← Volver</a>
       </div>
     </div>
   </nav>
@@ -363,41 +367,41 @@
 
   </div>
 
-    <footer class="footer-puma">
-  <div class="footer-puma-inner">
+  <footer class="footer-puma">
+    <div class="footer-puma-inner">
 
-    <div class="footer-col footer-logo-col">
-      <div class="footer-logo-wrap">
-        <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+      <div class="footer-col footer-logo-col">
+        <div class="footer-logo-wrap">
+          <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+        </div>
+        <div class="footer-marca">
+          Panaderia<br><span>PUMA</span>
+        </div>
       </div>
-      <div class="footer-marca">
-        Panaderia<br><span>PUMA</span>
+
+      <div class="footer-col">
+        <h4>Compañía</h4>
+        <a href="nosotros.php>Misión, Visión, Valores</a>
+      <a href=" privacidad.php>Nuestras Condiciones</a>
       </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="#">@lospuma.site</a>
+        <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+        <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <a href="login.php>¿Cómo vender?</a>
+      <a href=" nosotros.php>Preguntas frecuentes</a>
+      </div>
+
     </div>
+  </footer>
 
-    <div class="footer-col">
-      <h4>Compañía</h4>
-      <a href="nosotros.php>Misión, Visión, Valores</a>
-      <a href="privacidad.php>Nuestras Condiciones</a>
-    </div>
-
-    <div class="footer-col">
-      <h4>Contacto</h4>
-      <a href="#">@lospuma.site</a>
-      <a href="tel:+5493834887766">+54 9 383 488-7766</a>
-      <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
-    </div>
-
-    <div class="footer-col">
-      <h4>Ayuda</h4>
-      <a href="login.php>¿Cómo vender?</a>
-      <a href="nosotros.php>Preguntas frecuentes</a>
-    </div>
-
-  </div>
-</footer>
-
-<script src="js/fecha.js"></script>
+  <script src="js/fecha.js"></script>
 </body>
 
 </html>

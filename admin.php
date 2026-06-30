@@ -1,5 +1,9 @@
+<?php
+include('db.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +11,7 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/admin.css">
 </head>
+
 <body>
 
   <nav class="admin-navbar">
@@ -23,10 +28,22 @@
     </div>
 
     <div class="admin-stats">
-      <div class="admin-stat"><div class="num" id="st-pendientes">—</div><div class="lbl">Pendientes</div></div>
-      <div class="admin-stat"><div class="num" id="st-aprobados">—</div><div class="lbl">Aprobados</div></div>
-      <div class="admin-stat"><div class="num" id="st-rechazados">—</div><div class="lbl">Rechazados</div></div>
-      <div class="admin-stat"><div class="num" id="st-sin-enviar">—</div><div class="lbl">Sin documentos</div></div>
+      <div class="admin-stat">
+        <div class="num" id="st-pendientes">—</div>
+        <div class="lbl">Pendientes</div>
+      </div>
+      <div class="admin-stat">
+        <div class="num" id="st-aprobados">—</div>
+        <div class="lbl">Aprobados</div>
+      </div>
+      <div class="admin-stat">
+        <div class="num" id="st-rechazados">—</div>
+        <div class="lbl">Rechazados</div>
+      </div>
+      <div class="admin-stat">
+        <div class="num" id="st-sin-enviar">—</div>
+        <div class="lbl">Sin documentos</div>
+      </div>
     </div>
 
     <div class="admin-filtros">
@@ -63,4 +80,5 @@
   <div id="toast-box"></div>
   <script type="module" src="js/admin.js"></script>
 </body>
+
 </html>

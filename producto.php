@@ -1,5 +1,9 @@
+<?php
+include('db.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +11,12 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/tienda.css">
 </head>
+
 <body>
 
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="index.php class="navbar-logo">
+      <a href="index.php class=" navbar-logo">
         <img src="assets/logo.png" alt="Logo" onerror="this.style.display='none'">
         Panaderia<span class="marca">PUMA</span>
       </a>
@@ -48,36 +53,37 @@
     <div id="cart-footer"></div>
   </aside>
 
-    <footer class="footer-puma">
-  <div class="footer-puma-inner">
+  <footer class="footer-puma">
+    <div class="footer-puma-inner">
 
-    <div class="footer-col footer-logo-col">
-      <div class="footer-logo-wrap">
-        <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+      <div class="footer-col footer-logo-col">
+        <div class="footer-logo-wrap">
+          <img src="assets/logo.png" alt="Logo" class="footer-logo-img" onerror="this.style.display='none'">
+        </div>
+        <div class="footer-marca">
+          Panaderia<br><span>PUMA</span>
+        </div>
       </div>
-      <div class="footer-marca">
-        Panaderia<br><span>PUMA</span>
+
+      <div class="footer-col">
+        <h4>Compañía</h4>
+        <a href="nosotros.php>Misión, Visión, Valores</a>
+      <a href=" privacidad.php>Nuestras Condiciones</a>
+        <a href="terminos.php>Nuestros Terminos</a>
+    </div>
+
+    <div class=" footer-col">
+          <h4>Contacto</h4>
+          <a href="#">@lospuma.site</a>
+          <a href="tel:+5493834887766">+54 9 383 488-7766</a>
+          <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
       </div>
-    </div>
 
-    <div class="footer-col">
-      <h4>Compañía</h4>
-      <a href="nosotros.php>Misión, Visión, Valores</a>
-      <a href="privacidad.php>Nuestras Condiciones</a>
-      <a href="terminos.php>Nuestros Terminos</a>
     </div>
-
-    <div class="footer-col">
-      <h4>Contacto</h4>
-      <a href="#">@lospuma.site</a>
-      <a href="tel:+5493834887766">+54 9 383 488-7766</a>
-      <a href="mailto:soporte-lospuma@gmail.com">soporte-lospuma@gmail.com</a>
-    </div>
-
-  </div>
-</footer>
+  </footer>
 
   <div id="toast-box"></div>
   <script type="module" src="js/producto.js"></script>
 </body>
+
 </html>
